@@ -21,7 +21,8 @@ steps:
 
 - script: ./node_modules/.bin/sass Tailspin.SpaceGame.Web/wwwroot:Tailspin.SpaceGame.Web/wwwroot
   displayName: 'Compile Sass assets'
-
+  workingDirectory: '$(System.DefaultWorkingDirectory)' # Ensure this is correct
+  
 - task: gulp@1
   displayName: 'Run gulp tasks'
 
