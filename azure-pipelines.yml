@@ -20,7 +20,7 @@ steps:
   inputs:
     verbose: false
 
-- script: ./node_modules/.bin/sass $(wwwrootDir) $(wwwrootDir):$(wwwrootDir)
+- script: ./node_modules/.bin/sass Tailspin.SpaceGame.Web/wwwroot:Tailspin.SpaceGame.Web/wwwroot
   displayName: 'Compile Sass assets'
 
 - script: ./node_modules/.bin/gulp
