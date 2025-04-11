@@ -40,13 +40,11 @@ steps:
 
 
 - template: templates/build.yml
-  workingDirectory: '$(System.DefaultWorkingDirectory)'
   parameters:
     buildConfiguration: 'Debug'
     
 
 - template: templates/build.yml
-  workingDirectory: '$(System.DefaultWorkingDirectory)'
   parameters:
     buildConfiguration: 'Release'
 
